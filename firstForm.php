@@ -3,7 +3,7 @@
 <form>
     <section>
     <label>Vorname</label>
-    <input type="string" name="vorname" class="form" id="vorname">
+    <input type="string" name="vorname" class="defaultValue" value="vorname" class="form" id="vorname" required>
         
         
     <label>Nachname</label>
@@ -15,7 +15,7 @@
     <br>
         <label>username</label>
         <input type="text" class="defaultValue" value="Username" id="username" />
-        <span> <!--<a href="overview.php">--><button  class="form" id="okButton">ok</button></span>
+         <button onclick="myFunction()" type="string" class="form" value="submit" id="okButton">ok</button>
     </section>
 </form>
 

@@ -1,16 +1,16 @@
-var form = document.forms[0]
+var form = document.forms[0];
     ok = document.getElementById("okButton");
-    vorname = document.getElementById("vorname");
+    vorname = document.getElementById("vorname"),
     nachname = document.getElementById("nachname");
 
-    ok.addEventListener('invalid', function(e){
-        if(vorname.validity.valueMissing){
+    ok.addEventListener("invalid", function myFunction (e){
+        if(ok.validity.valueMissing){
             e.target.setCustomValidity("Bitte tragen Sie Ihren Vornamen ein.");
-        } else if(!vorname.validity.valid){
+        } else if(!ok.validity.valid){
             e.target.setCustomValidity("Das ist kein akzeptierter Vorname.");
         }
         vorname.addEventListener("input", function(e){
-            e.target.setCustomValidity(" ");
+            e.target.setCustomValidity("funzt");
         });
         
     },false);
