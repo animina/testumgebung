@@ -4,6 +4,8 @@
     <section>
     <label>Vorname</label>
     <input type="string" name="vorname" class="form" id="vorname">
+        
+        
     <label>Nachname</label>
      <input type="string" name="nachname" class="form" id="nachname">
     <label>Straße</label>
@@ -11,7 +13,9 @@
     <label>PLZ</label>
          <input type="int" name="plz" class="form" id="plz">
     <br>
-        <span> <a href="overview.php"><button type="button" class="okButton" id="okButton">ok</button></a></span>
+        <label>username</label>
+        <input type="text" class="defaultValue" value="Username" id="username" />
+        <span> <!--<a href="overview.php">--><button  class="form" id="okButton">ok</button></span>
     </section>
 </form>
 
