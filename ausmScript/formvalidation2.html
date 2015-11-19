@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<title>Form Validation 2</title>
+<link rel="stylesheet" href="css/ownstyles2.css">
+<link rel="stylesheet" href="css/elusive-icons/css/elusive-icons.min.css">
+</head>
+<body>
+<form action="form_response.php" method="post">
+<fieldset>
+<legend>Change Your Password</legend>
+<ul>
+<li>
+<label for="username">Username:</label>
+<div>
+<input id="username" type="text" name="username" pattern="[a-zA-Z0-9_-]{6,12}"
+autofocus required title="must be alphanumeric in 6-12 chars"/>
+<span id="icon"></span>
+</div>
+</li>
+<li>
+<label for="password1">Password 1:</label>
+<input id="password1" name="pw1" type="password" required/>
+</li>
+<li>
+<label for="password2">Password 2:</label>
+<input id="password2" name="pw2" type="password" required/>
+</li>
+</ul>
+<input id="submit" type="submit" value="create">
+</fieldset>
+</form>
+<script src="js/validate.js"></script>
+</body>
+</html>

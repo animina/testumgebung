@@ -15,7 +15,7 @@
     <br>
         <label>username</label>
         <input type="text" class="defaultValue" value="Username" id="username" />
-         <button onclick="myFunction()" type="string" class="form" value="submit" id="okButton">ok</button>
+         <input onclick="myFunction()" type="submit" class="form" value="ok" id="okButton">
     </section>
 </form>
 
