@@ -1,22 +1,32 @@
-var form = document.forms[0];
-    ok = document.getElementById("okButton");
-    vorname = document.getElementById("vorname"),
-    nachname = document.getElementById("nachname");
-
-    ok.addEventListener("invalid", function myFunction (e){
-        if(ok.validity.valueMissing){
-            e.target.setCustomValidity("Bitte tragen Sie Ihren Vornamen ein.");
-        } else if(!ok.validity.valid){
-            e.target.setCustomValidity("Das ist kein akzeptierter Vorname.");
-        }
-        vorname.addEventListener("input", function(e){
-            e.target.setCustomValidity("funzt");
-        });
-        
-    },false);
+function formValidation()
+{
+    var vorname = document.testRegistration.vorname;    
+    var nachname = document.testRegistration.nachname;
+    var strasse = document.testRegistration.strasse;
+    var vorname = document.testRegistration.vorname;
+    var plz = document.testRegistration.plz;
+    var username = document.testRegistration.username;
 
 
+if(vorname_validation(vorname)){
+    
+}
+return false;
+}
 
+function vorname_validation(vorname) {
+    var letters = /^[A-Za-z]+$/;  
+    if(vorname.value.match(letters))  
+    {  
+    return true;  
+    }  
+    else  
+    {  
+    alert('Username must have alphabet characters only');  
+    vorname.focus();  
+    return false;  
+    }  
+}  
 
 
 

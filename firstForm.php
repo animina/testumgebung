@@ -1,21 +1,23 @@
 <?php include_once("header.php") ?>
  
-<form>
+<form name='testRegistrierung' onSubmit="return formValidation();">
+    
+   
     <section>
-    <label>Vorname</label>
+    <label for="vorname">Vorname</label>
     <input type="string" name="vorname" class="defaultValue" value="vorname" class="form" id="vorname" required>
         
         
-    <label>Nachname</label>
+    <label for="nachname">Nachname</label>
      <input type="string" name="nachname" class="form" id="nachname">
-    <label>Straße</label>
+    <label for="strasse">Straße</label>
      <input type="string" name="strasse" class="form" id="strasse">
-    <label>PLZ</label>
+    <label for="plz">PLZ</label>
          <input type="int" name="plz" class="form" id="plz">
     <br>
-        <label>username</label>
-        <input type="text" class="defaultValue" value="Username" id="username" />
-         <input onclick="myFunction()" type="submit" class="form" value="ok" id="okButton">
+        <label for="username">username</label>
+        <input type="text" class="defaultValue" value="Username" id="username" name="username" />
+        <input type="submit" name="submit" value="submit" />
     </section>
 </form>
 

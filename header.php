@@ -8,10 +8,10 @@
   	<!--<link rel="stylesheet" href="css/leaflet.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">-->
  <!--   <script src="js/leaflet.js"></script>-->
-    <script src="js/jquery-1.11.3.min.js"></script>
+    <!--<script src="js/jquery-1.11.3.min.js"></script>-->
     <script src="script.js"></script>
-	<link rel="stylesheet" href="includes/resources/form.css" />
-	<link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
+	<!--<link rel="stylesheet" href="includes/resources/form.css" />
+	<link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>-->
 </head>
 
 <body>
